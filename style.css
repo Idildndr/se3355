@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('./images/kyle-glenn-nXt5HtLmlgE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .navbar{
+    padding-bottom: 200px;
+  }
+
+  
+  .form-container {
+    position: absolute;
+    top: 80px; /* Adjust the top space as needed */
+    left: 50px; /* Adjust the left space as needed */
+    max-width: 600px;
+    height: auto;
+    max-height: fit-content;
+    background-color: white;
+    border-radius: 3%;
+    padding: 20px;
+  }
+  
+  .content {
+    text-align: left;
+    padding: 20px;
+  }
+  
+  /* Additional styling for form elements if needed */
+  
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /*
+
+  .inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .inp .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+  }
+  */
+
+form input{
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+form select{
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+  input[type=text] {
+    position: relative;
+    width: 100%;
+    max-width: 580px;
+    border-radius: 3px;
+    overflow: hidden;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  }
+
+  input[type=email] {
+    position: relative;
+    width: 100%;
+    max-width: 580px;
+    border-radius: 3px;
+    overflow: hidden;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  }
+
+  form a:link {
+    color: black;
+    font-weight: bold; /* Add this line to make the text bold */
+}
+  
+form a:visited {
+    color: black;
+    font-weight: bold; /* Add this line to make the text bold */
+}
+
+select{
+  position: relative;
+    width: 100%;
+    max-width: 580px;
+    border-radius: 3px;
+    overflow: hidden;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary{
+    display: block;
+    margin-left: 20px;
+    color: aqua;
+    background-color: rgb(98, 71, 71);
+}
+  

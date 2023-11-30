@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <div class="background-image"></div>
+  
+ 
+<nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"> Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Categories.html">Categories</a>
+                  </li>
+         
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+
+            </ul>
+    
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- White Container for Form -->
+  <div class="form-container col-sm12 col-md-8 col-lg-4 ">
+    <div class="content">      
+      <h3>EDUCATION APPOINTMENT FORM</h3>
+      <form>
+            <input type="text" placeholder="Title"><br>
+            <input type="text"  placeholder="Your name"><br>
+            <input type="email" id="emailText" name="email" placeholder="Email"><br>
+            <input type="phone" id="phoneNumber" placeholder="Phone Number"><br>
+
+
+            <select id="courseTypeDropdown" name="course">
+              <option value="" disabled selected> Course Type:</option>
+          </select>
+
+          
+            <select id="cityDropdown" name="city">
+              <option value="" disabled selected> City</option>
+          </select>
+
+        
+            <p> <b>How would you like to be located?</b></p>
+         
+
+          
+          <select id="beLocated" >
+           <option value="ByEmail">By Email </option>
+           <option value="InPerson">In Person</option>
+           <option value="ViaMail">Via Mail</option>
+           <option value="ThroughMessagingApps">Through Messaging Apps</option>
+           <option value="SocialMedia">Social Media</option>
+           <option value="NoPreference">No Preference</option>
+                  </select>
+
+            <select  id="fname" name="fname" placeholder="Hours: 8am 10pm">
+              <option value="" disabled selected>Select Class Hour:</option>
+              <option value="8-9">8 am - 9 am</option>
+              <option value="9-10">9 am - 10 am</option>
+              <option value="10-11">10 am - 11 am</option>
+              <option value="11-12">11 am - 12 pm</option>
+              <option value="12-13">12 pm - 1 pm</option>
+              <option value="13-14">1 pm - 2 pm</option>
+              <option value="14-15">2 pm - 3 pm</option>
+              <option value="15-16">3 pm - 4 pm</option>
+              <option value="16-17">4 pm - 5 pm</option>
+              <option value="17-18">5 pm - 6 pm</option>
+            </select>
+
+            <input type="checkbox" id="terms" name="terms" />
+            <label for="terms">I agree to the <a rel="stylesheet" href="https://www.google.com.tr/?hl=tr" >terms and conditions</a>
+
+
+      </form>
+
+    </div>
+    <button id="request-button"  type="button" class="btn btn-primary" >Request an appointment</button>
+      <p id="validationMessage"></p>
+
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Invalid submission</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <p>Invalid submission, please make sure to enter a Turkish phone number, and fill all the fields.</address>.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="index.js" charset="UTF-8"></script>
+</body>
+
+</html>
